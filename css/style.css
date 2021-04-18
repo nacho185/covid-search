@@ -106,3 +106,8 @@ p {
   }
 }
 /*end @media*/
+@media (max-width: 768px) {
+  .usa-corona-virus-container {
+    display: none;
+  }
+}
