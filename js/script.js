@@ -26,7 +26,7 @@ let china = "china";
 /**/
 searchButton.addEventListener("click", () => {
   fetch(
-    "https:api.quarantine.country/api/v1/summary/region?region=" +
+    "https://api.quarantine.country/api/v1/summary/region?region=" +
       inputValue.value +
       "&sub_areas=1"
   )
@@ -52,7 +52,7 @@ searchButton.addEventListener("click", () => {
 
 /*usa*/
 fetch(
-  "https:api.quarantine.country/api/v1/summary/region?region=" +
+  "https://api.quarantine.country/api/v1/summary/region?region=" +
     us +
     "&sub_areas=1"
 )
@@ -74,7 +74,7 @@ fetch(
   });
 /*china*/
 fetch(
-  "https:api.quarantine.country/api/v1/summary/region?region=" +
+  "https://api.quarantine.country/api/v1/summary/region?region=" +
     china +
     "&sub_areas=1"
 )
