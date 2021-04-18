@@ -41,6 +41,9 @@ searchButton.addEventListener("click", () => {
       searchRecovered.textContent = "Recovered: " + searchTotalRecovered;
       h1Name.textContent = inputValue.value + " statistics";
       middleDiv.style.display = "block";
+    })
+    .catch((err) => {
+      console.log(err);
     });
 });
 
@@ -61,6 +64,7 @@ fetch(
     usaDeaths.textContent = "Deaths: " + usaTotalDeaths;
     usaRecovered.textContent = "Recovered: " + usaTotalRecovered;
   });
+
 /*china*/
 fetch(
   "https:api.quarantine.country/api/v1/summary/region?region=china&sub_areas=1"
