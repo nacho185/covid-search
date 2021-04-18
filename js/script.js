@@ -63,8 +63,10 @@ fetch(
     usaActive.textContent = "Total active: " + usaTotalActive;
     usaDeaths.textContent = "Deaths: " + usaTotalDeaths;
     usaRecovered.textContent = "Recovered: " + usaTotalRecovered;
+  })
+  .catch((err) => {
+    console.log(err);
   });
-
 /*china*/
 fetch(
   "https:api.quarantine.country/api/v1/summary/region?region=china&sub_areas=1"
@@ -81,4 +83,7 @@ fetch(
     chinaActive.textContent = "Total active: " + chinaTotalActive;
     chinaDeaths.textContent = "Deaths: " + chinaTotalDeaths;
     chinaRecovered.textContent = "Recovered: " + chinaTotalRecovered;
+  })
+  .catch((err) => {
+    console.log(err);
   });
