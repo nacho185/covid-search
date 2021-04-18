@@ -1,0 +1,108 @@
+/*satrt global*/
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("../img/bdimg.jpeg");
+  background-position: center;
+  color: #fff;
+  overflow-x: hidden;
+}
+#back-to-portfolio {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-decoration: none;
+  color: #fff;
+  background-color: red;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+#back-to-portfolio a {
+  text-decoration: none;
+  color: #fff;
+}
+.container {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+h1 {
+  font-size: 2.5rem;
+  color: dodgerblue;
+}
+p {
+  font-size: 1.6rem;
+}
+/*end global*/
+/*usa-corona-virus-container*/
+.usa-corona-virus-container {
+  border: 1px solid gray;
+  padding: 60px 30px;
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55));
+}
+.search-corona-virus-container {
+  border: 1px solid gray;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+
+  padding: 60px 30px;
+  display: none;
+}
+.china-corona-virus-container {
+  border: 1px solid gray;
+  padding: 60px 30px;
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55));
+}
+.search {
+  position: relative;
+  top: 30px;
+}
+#enter-search {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+/*end usa-corona-virus-container*/
+/*start test*/
+/*end start test*/
+.test {
+  margin-top: 50px;
+}
+.test input {
+  width: 300px;
+  height: 25px;
+}
+/*container-for-all-three-containers*/
+.container-for-all-three-containers {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 150px;
+}
+/*end container-for-all-three-containers*/
+/*@media*/
+@media (max-width: 768px) {
+  .container-for-all-three-containers {
+    display: grid;
+  }
+}
+@media (max-width: 320px) {
+  #search {
+    width: 200px;
+    height: 25px;
+  }
+  .search {
+    font-size: 2rem;
+  }
+}
+/*end @media*/

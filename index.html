@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>map api</title>
+  </head>
+  <body>
+    <button id="back-to-portfolio"><a href="">Portfolio</a></button>
+    <div class="container">
+      <!---->
+      <h1 class="search">Search for a location's covid summary</h1>
+      <div class="test">
+        <input type="text" id="search" placeholder="Search any place..." />
+        <button id="enter-search">Search</button>
+      </div>
+
+      <!--total day cases-->
+      <div class="container-for-all-three-containers">
+        <div class="usa-corona-virus-container">
+          <h1 class="title-for-div-1">USA statistics</h1>
+          <hr />
+          <p id="usa-total-cases-of-covid"></p>
+
+          <p id="usa-active-cases-of-covid"></p>
+          <p id="usa-deaths-cases-of-covid"></p>
+          <p id="usa-recovered-cases-of-covid"></p>
+        </div>
+        <!---->
+        <!---->
+        <!---->
+        <div class="search-corona-virus-container">
+          <h1 id="title-for-div--2" class="title-for-div-2"></h1>
+          <hr />
+          <p id="search-total-cases-of-covid"></p>
+          <p id="search-active-cases-of-covid"></p>
+          <p id="search-deaths-cases-of-covid"></p>
+          <p id="search-recovered-cases-of-covid"></p>
+        </div>
+        <!---->
+        <!---->
+        <!--total day cases-->
+        <div class="china-corona-virus-container">
+          <h1 class="title-for-div-3">China statistics</h1>
+          <hr />
+
+          <p id="china-total-cases-of-covid"></p>
+          <p id="china-active-cases-of-covid"></p>
+          <p id="china-deaths-cases-of-covid"></p>
+          <p id="china-recovered-cases-of-covid"></p>
+        </div>
+      </div>
+    </div>
+    <!--scripts-->
+    <script src="js/script.js"></script>
+  </body>
+</html>
