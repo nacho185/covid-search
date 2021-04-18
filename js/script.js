@@ -1,6 +1,8 @@
 /*searchbar function*/
 let searchButton = document.getElementById("enter-search");
 let inputValue = document.getElementById("search");
+const firstUrl = "https://api.quarantine.country/api/v1/summary/region?region=";
+const secondUrl = "&sub_areas=1";
 /*USA*/
 let middleDiv = document.querySelector(".search-corona-virus-container");
 let h1Name = document.getElementById("title-for-div--2");
@@ -25,11 +27,7 @@ let china = "china";
 
 /**/
 searchButton.addEventListener("click", () => {
-  fetch(
-    "https://api.quarantine.country/api/v1/summary/region?region=" +
-      inputValue.value +
-      "&sub_areas=1"
-  )
+  fetch(firstUrl + inputValue.value + secondUrl)
     .then((response) => response.json())
     .then((data) => {
       let searchTotalCases = data["data"]["summary"]["total_cases"];
@@ -51,11 +49,7 @@ searchButton.addEventListener("click", () => {
 });
 
 /*usa*/
-fetch(
-  "https://api.quarantine.country/api/v1/summary/region?region=" +
-    us +
-    "&sub_areas=1"
-)
+fetch(firstUrl + us + secondUrl)
   .then((response) => response.json())
   .then((data) => {
     let usaTotalCases = data["data"]["summary"]["total_cases"];
@@ -73,11 +67,7 @@ fetch(
     console.log(err);
   });
 /*china*/
-fetch(
-  "https://api.quarantine.country/api/v1/summary/region?region=" +
-    china +
-    "&sub_areas=1"
-)
+fetch(firstUrl + china + secondUrl)
   .then((response) => response.json())
   .then((data) => {
     let chinaTotalCases = data["data"]["summary"]["total_cases"];
