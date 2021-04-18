@@ -15,11 +15,14 @@ let searchDeaths = document.getElementById("search-deaths-cases-of-covid");
 let searchRecovered = document.getElementById(
   "search-recovered-cases-of-covid"
 );
+let us = "us";
 /*CHINA*/
 let chinaTotal = document.getElementById("china-total-cases-of-covid");
 let chinaActive = document.getElementById("china-active-cases-of-covid");
 let chinaDeaths = document.getElementById("china-deaths-cases-of-covid");
 let chinaRecovered = document.getElementById("china-recovered-cases-of-covid"); //
+let china = "china";
+
 /**/
 searchButton.addEventListener("click", () => {
   fetch(
@@ -49,7 +52,9 @@ searchButton.addEventListener("click", () => {
 
 /*usa*/
 fetch(
-  "https:api.quarantine.country/api/v1/summary/region?region=usa&sub_areas=1"
+  "https:api.quarantine.country/api/v1/summary/region?region=" +
+    us +
+    "&sub_areas=1"
 )
   .then((response) => response.json())
   .then((data) => {
@@ -69,7 +74,9 @@ fetch(
   });
 /*china*/
 fetch(
-  "https:api.quarantine.country/api/v1/summary/region?region=china&sub_areas=1"
+  "https:api.quarantine.country/api/v1/summary/region?region=" +
+    china +
+    "&sub_areas=1"
 )
   .then((response) => response.json())
   .then((data) => {
