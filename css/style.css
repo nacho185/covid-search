@@ -4,7 +4,7 @@
   margin: 0;
 }
 body {
-  font-family: 'Poppins', sans-serif,'Times New Roman';
+  font-family: "Poppins", sans-serif, "Times New Roman";
   line-height: 1.5;
   background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
     url("../img/bdimg.jpeg");
@@ -12,22 +12,7 @@ body {
   color: #fff;
   overflow-x: hidden;
 }
-#back-to-portfolio {
-  position: absolute;
-  top: 0;
-  right: 0;
-  text-decoration: none;
-  color: #fff;
-  background-color: red;
-  padding: 5px 10px;
-  text-align: center;
-  font-size: 16px;
-  cursor: pointer;
-}
-#back-to-portfolio a {
-  text-decoration: none;
-  color: #fff;
-}
+
 .container {
   margin: 0 auto;
   width: 80%;
@@ -86,15 +71,33 @@ p {
 }
 /*container-for-all-three-containers*/
 .container-for-all-three-containers {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
   margin-top: 150px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding-bottom: 30px;
 }
 /*end container-for-all-three-containers*/
 /*@media*/
+@media (max-width: 1280px) {
+  .container-for-all-three-containers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 1280px) {
+  .container-for-all-three-containers {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .search-corona-virus-container {
+    grid-row: 1/2;
+  }
+}
 @media (max-width: 768px) {
   .container-for-all-three-containers {
     display: grid;
+    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 320px) {
@@ -107,8 +110,3 @@ p {
   }
 }
 /*end @media*/
-@media (max-width: 768px) {
-  .usa-corona-virus-container {
-    display: none;
-  }
-}
