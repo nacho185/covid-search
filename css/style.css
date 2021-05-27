@@ -8,9 +8,11 @@ body {
   line-height: 1.5;
   background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
     url("../img/bdimg.jpeg");
-  background-position: center;
+  
+  background-size: cover;
   color: #fff;
   overflow-x: hidden;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -21,7 +23,7 @@ body {
 }
 h1 {
   font-size: 2.5rem;
-  color: dodgerblue;
+  color: #FF9900;
 }
 p {
   font-size: 1.6rem;
