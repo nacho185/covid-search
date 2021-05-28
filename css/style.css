@@ -61,15 +61,16 @@ p {
   cursor: pointer;
 }
 /*end usa-corona-virus-container*/
-/*start test*/
-/*end start test*/
-.test {
+/*start search-container*/
+
+.search-container {
   margin-top: 50px;
 }
-.test input {
+.search-container input {
   width: 300px;
   height: 25px;
 }
+/*end search-container*/
 /*container-for-all-three-containers*/
 .container-for-all-three-containers {
   display: grid;
