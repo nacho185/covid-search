@@ -7,7 +7,7 @@ body {
   font-family: "Poppins", sans-serif, "Times New Roman";
   line-height: 1.5;
   background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-    url("../img/bdimg.jpeg");
+    url("../img/bgimg.jpeg");
   
   background-size: cover;
   color: #fff;
@@ -23,7 +23,7 @@ body {
 }
 h1 {
   font-size: 2.5rem;
-  color: #FF9900;
+  color: #91C3DC;
 }
 p {
   font-size: 1.6rem;
