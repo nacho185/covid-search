@@ -47,6 +47,8 @@ p {
   padding: 60px 30px;
   background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55));
 }
+
+
 .search {
   position: relative;
   top: 30px;
@@ -84,6 +86,7 @@ p {
 .search-container input {
   width: 300px;
   height: 25px;
+  font-size: 1.2rem;
   border: none;
 }
 .search-container input:focus{
@@ -119,6 +122,12 @@ p {
   .container-for-all-three-containers {
     display: grid;
     grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 425px) {
+  #search {
+    width: 220px;
+    height: 25px;
   }
 }
 @media (max-width: 320px) {
