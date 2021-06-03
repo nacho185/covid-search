@@ -8,7 +8,7 @@ body {
   line-height: 1.5;
   background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
     url("../img/bgimg.jpeg");
-  
+
   background-size: cover;
   color: #fff;
   overflow-x: hidden;
@@ -23,17 +23,41 @@ body {
 }
 h1 {
   font-size: 2.5rem;
-  color: #91C3DC;
+  color: #fe4a49;
 }
 p {
   font-size: 1.6rem;
 }
 /*end global*/
+/*scrollbar*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fe4a49;
+  border-radius: 10px;
+}
+/*end scrollbar*/
 /*usa-corona-virus-container*/
 .usa-corona-virus-container {
   border: 1px solid gray;
   padding: 60px 30px;
   background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55));
+}
+.title-for-div-2 {
+  color: #fe4a49;
+}
+.title-for-div-1,
+.title-for-div-3 {
+  color: #2ab7ca;
 }
 .search-corona-virus-container {
   border: 1px solid gray;
@@ -48,7 +72,6 @@ p {
   background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55));
 }
 
-
 .search {
   position: relative;
   top: 30px;
@@ -57,7 +80,7 @@ p {
   background-color: #fff;
   border: none;
   color: #555;
-  padding:0 10px;
+  padding: 0 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -67,12 +90,11 @@ p {
 /*end usa-corona-virus-container*/
 /*start search-container*/
 
-.header-wrapper{
+.header-wrapper {
   display: grid;
   grid-template-columns: 1fr;
   gap: 60px;
   align-items: center;
-  
 }
 .search-container {
   background-color: #fff;
@@ -89,7 +111,7 @@ p {
   font-size: 1.2rem;
   border: none;
 }
-.search-container input:focus{
+.search-container input:focus {
   outline: none;
 }
 /*end search-container*/
